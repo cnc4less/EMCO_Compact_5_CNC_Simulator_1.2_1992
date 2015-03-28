@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/imifos/EMCO_Compact_5_CNC_Simulator_1.2_1992">View on GitHub</a>
 
-          <h1 id="project_title">EMCO Compact 5 CNC Simulator for PC 1.2 (1992)</h1>
-          <h2 id="project_tagline"></h2>
+          <h1 id="project_title">EMCO Compact 5 CNC Simulator 1.2</h1>
+          <h2 id="project_tagline">(Developend in 1992, Language C)</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/imifos/EMCO_Compact_5_CNC_Simulator_1.2_1992/zipball/master">Download this project as a .zip file</a>
@@ -31,15 +31,78 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>.</p>
+        
+		
+		
+		
+		
+		
+		Actually, I wrote this graphical <a href="http://www.google.com/search?q=EMCO+Compact+5" target="_blank"><strong>EMCO Compact 5 CNC Simulator</strong></a>&nbsp; back in 1992, before I started my studies. The reasons were that I wanted to learn C, after working well in Assembler, BASIC and Pascal, and that I was tired to type my programs manually into the <a href="http://en.wikipedia.org/wiki/Numerical_control" target="_blank">CNC machine</a> (click to see what CNC means).</p>
+<p>Afterwards, I recovered the software back from old floppy disks, I googled around and found out that the computer controlled <a href="http://en.wikipedia.org/wiki/Lathe" target="_blank">turning lathe</a> still is in use for hobby, training and learning purposes. So I decided to release the software as freeware.</p>
+<p>It's translated in German and French (sorry, but at this time, English wasn't yet an option for me ;) and designed to run on old <a href="http://en.wikipedia.org/wiki/IBM_Personal_Computer_XT" target="_blank">XT PCs</a> with <a href="http://en.wikipedia.org/wiki/Color_Graphics_Adapter" target="_blank">CGA</a> or <a href="http://en.wikipedia.org/wiki/Video_Graphics_Array" target="_blank">VGA</a> cards. This type of PCs was common to find in schools since cheap and at this time often disposed by companies in favor of the "high-end"<a href="http://en.wikipedia.org/wiki/IBM_Personal_Computer/AT" target="_blank">AT-PC technology</a>. Today, the best solution is to run it using the fantastic <a href="http://www.dosbox.com" target="_blank">DOSBOX emulator</a>, which is available for Windows, Linux and Mac. Note that I never tested if the RS-232 communication is possible using DOSBOX, for example using a USB-to-Serial adapter.</p>
+<p>Some key features:</p>
+<ul>
+<li>Works in CGA (displays half of the workpiece) and VGA mode.</li>
+<li>Able to send and receive CNC programs from the EMCO machine via RS-232 (serial port).</li>
+<li>Nice program editor with syntax formatting and error check and the possibility to add comments.</li>
+<li>Supports a lot of working tools.</li>
+<li>Allows to run a program in step-by-step mode (trace mode).</li>
+<li>Supports using a second monitor to display the running program by installing a <a href="http://en.wikipedia.org/wiki/Hercules_card" target="_blank">Hercules graphics card as 2nd video card</a>. This is quite handy while working and having a PC with two monitors was really impressive and special at this time.</li>
+<li>Execution speed can be adapted by defining wait cycles in the configuration options.</li>
+</ul>
+<p><span style="text-decoration: underline;">License:</span></p>
+<p>The <strong>software is freeware</strong> and can freely be used and distributed, as long as it is not modified. The software is provided as it and you <strong>use it at your own risk</strong>! By downloading the archive file, you agree with these terms of usage.</p>
+<p>The only little favor that I ask for, is that you send me a mail just telling me what you are doing with the application. It's just because I like to know if my work is actually useful for someone and because I'm curious by nature :)</p>
+<p><span style="text-decoration: underline;">Download:</span></p>
+<p><a href="binaries/EMCO_Compact_5_CNC_Simulator_1.2.zip">Click here to get the ZIP archive</a>.</p>
+<p>It contains 3 DOS executable files, one for each version: CGA German, VGA German, VGA French. Tree demo CNC projects are included as well, so you can test it directly.</p>
+<p>Source Codes: <a href="https://github.com/imifos/EMCO_Compact_5_CNC_Simulator_1.2_1992" target="_blank">https://github.com/imifos/EMCO_Compact_5_CNC_Simulator_1.2_1992</a></p>
+<p><span style="text-decoration: underline;">Picture gallery and some explanations:</span></p>
+<p><a href="http://www.google.com/search?q=emco+compact+5&amp;hl=en&amp;hs=HKd&amp;prmd=ivns&amp;source=lnms&amp;tbm=isch&amp;ei=BcdjTu21MOz34QTq45WNCg&amp;sa=X&amp;oi=mode_link&amp;ct=mode&amp;cd=2&amp;ved=0CBMQ_AUoAQ&amp;biw=1581&amp;bih=1060" target="_blank">Click here to see some pictures</a> of he old model of the EMCO Compact 5 CNC machine, I was used to work with.</p>
+<p>Some screen shots from the application:</p>
+<center>
+<p style="text-align: center;">The main screen.</p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_000.png" alt="" height="300" width="400"></p>
+<p style="text-align: center;">The program editor. Via the menu you can see the tools supported by the application and make a syntax check (to avoid sending commands making the CNC machine doing "funny"things :)</p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvd_003.png" alt="" height="300" width="400"></p>
+<p style="text-align: center;">The tools information screens.</p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvd_001.png" alt="" height="300" width="400"></p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_001.png" alt="" height="300" width="400"></p>
+<p style="text-align: center;">Help screen.</p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_002.png" alt="" height="300" width="400"></p>
+<p style="text-align: center;">Starting the simulation by defining the workpiece parameters.</p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimcd_000.png" alt="" height="300" width="400"></p>
+<p style="text-align: center;">Simulation in CGA mode. Only half the workpiece is shown (which isn't a problem since it's round and turning).</p>
+<p style="text-align: center;"><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimcd_001.png" alt="" height="300" width="400"></p>
+<p style="text-align: center;">Some screen shots of the VGA version…</p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvd_002.png" alt="" height="300" width="400"></p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_005.png" alt="" height="300" width="400"></p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_006.png" alt="" height="300" width="400"></p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_008.png" alt="" height="300" width="400"></p>
+<p><img class="aligncenter size-full wp-image-292" title="" src="images/cncsimvf_009.png" alt="" height="300" width="400"></p>
+</center>
+<p><iframe src="//player.vimeo.com/video/39134041" title="EMCO Compact 5 CNC Simulator 1992" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="453" width="604"></iframe></p>
+<p><span style="text-decoration: underline;">Future of this project:</span></p>
+<p>When I find time...</p>
+<p>- I'll try to make an English version.<br>
+- Try to find and buy an EMCO Compact 5, just for fun!<br>
+- Make it running on my BeagleBoard.<br>
+- Maybe, I'll make a more modern version (in Java) one day. The mathematics stuff is developed and I just need to port the user interface.</p>
+		
+		
+		
+		
+		
+		
+		
+		
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">EMCO Compact 5 CNC Simulator for PC 1.2 (1992) maintained by <a href="https://github.com/imifos">imifos</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p class="copyright">EMCO Compact 5 CNC Simulator for PC 1.2 (1992) maintained by <a href="https://github.com/imifos">Imifos / Tasha CARL</a></p>
       </footer>
     </div>
 
